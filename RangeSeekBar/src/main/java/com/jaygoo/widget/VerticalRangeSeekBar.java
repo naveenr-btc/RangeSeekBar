@@ -165,7 +165,6 @@ public class VerticalRangeSeekBar extends RangeSeekBar {
                 } else {
                     y = getProgressBottom() + getTickMarkTextMargin() + tickMarkTextRect.height();
                 }
-                y = getProgressTop();
                 int degrees = 0;
                 float rotateX = (x + tickMarkTextRect.width() / 2f);
                 float rotateY = (y - tickMarkTextRect.height() / 2f);
