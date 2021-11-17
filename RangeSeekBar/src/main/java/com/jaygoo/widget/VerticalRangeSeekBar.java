@@ -137,7 +137,7 @@ public class VerticalRangeSeekBar extends RangeSeekBar {
                 final String text2Draw = getTickMarkTextArray()[i].toString();
                 if (TextUtils.isEmpty(text2Draw)) continue;
                 paint.getTextBounds(text2Draw, 0, text2Draw.length(), tickMarkTextRect);
-                paint.setTextAlign(Paint.Align.RIGHT);
+                paint.setTextAlign(Paint.Align.CENTER);
                 paint.setColor(getTickMarkTextColor());
                 //平分显示
                 float x;
@@ -165,6 +165,7 @@ public class VerticalRangeSeekBar extends RangeSeekBar {
                 } else {
                     y = getProgressBottom() + getTickMarkTextMargin() + tickMarkTextRect.height();
                 }
+                y = getProgressTop();
                 int degrees = 0;
                 float rotateX = (x + tickMarkTextRect.width() / 2f);
                 float rotateY = (y - tickMarkTextRect.height() / 2f);
