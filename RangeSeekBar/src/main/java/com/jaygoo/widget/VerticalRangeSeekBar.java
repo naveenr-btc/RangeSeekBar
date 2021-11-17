@@ -137,7 +137,7 @@ public class VerticalRangeSeekBar extends RangeSeekBar {
                 final String text2Draw = getTickMarkTextArray()[i].toString();
                 if (TextUtils.isEmpty(text2Draw)) continue;
                 paint.getTextBounds(text2Draw, 0, text2Draw.length(), tickMarkTextRect);
-                paint.setTextAlign(Paint.Align.LEFT);
+                paint.setTextAlign(Paint.Align.RIGHT);
                 paint.setColor(getTickMarkTextColor());
                 //平分显示
                 float x;
